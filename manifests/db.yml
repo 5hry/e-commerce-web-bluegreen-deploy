@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: database
+spec:
+  selector:
+    matchLabels:
+      app: database
+  template:
+    metadata:
+      labels:
+        app: database
+    spec:
+      containers:
+      - name: database
+        image: mysql:8.0
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "rootpass"
+        - name: MYSQL_DATABASE
+          value: "is207_database"
+        - name: MYSQL_USER
+          value: "user"
+        - name: MYSQL_PASSWORD
+          value: "user"
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - name: init-sql-volume
+          mountPath: /docker-entrypoint-initdb.d
+      volumes:
+      - name: init-sql-volume
+        configMap:
+          name: init-sql-config
+          items:
+          - key: init.sql
+            path: init.sql
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-clusterip
+spec:
+  type: ClusterIP
+  selector:
+    app: database
+  ports:
+  - port: 3306
+    targetPort: 3306

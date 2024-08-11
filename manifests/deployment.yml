@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: fnproject 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fnproject
+  template:
+    metadata:
+      labels:
+        app: fnproject 
+    spec:
+      containers:
+        - name: fnproject 
+          image: sangngoacr.azurecr.io/fnproject
+          ports:
+          - containerPort: 80
