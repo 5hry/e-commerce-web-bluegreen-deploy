@@ -12,5 +12,5 @@ $connect = new mysqli($servername, $username, $password, $dbname, $port);
 if ($connect->connect_error) {
     die("Kết nối thất bại: " . $connect->connect_error);
 }
-echo "Kết nối thành công!";
+echo "Kết nối thành công! Hello I'm Sang";
 ?>
