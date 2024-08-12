@@ -1,5 +1,5 @@
 {
-    "executionRoleArn": "arn:aws:iam::905418377779:role/nodejs-task-execution-role",
+    "executionRoleArn": "arn:aws:iam::905418377779:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
             "name": "ws1-web-app",
