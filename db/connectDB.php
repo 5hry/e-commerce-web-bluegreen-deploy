@@ -1,5 +1,5 @@
 <?php
-$servername = "ec2-13-229-114-31.ap-southeast-1.compute.amazonaws.com"; // EC2 Public DNS
+$servername = "ec2-13-250-112-85.ap-southeast-1.compute.amazonaws.com"; // EC2 Public DNS
 $username = "user";
 $password = "user";
 $dbname = "is207_database";
