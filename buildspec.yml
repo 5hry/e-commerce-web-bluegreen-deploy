@@ -6,8 +6,6 @@ env:
 phases:
   pre_build:
     commands:
-      - echo Logging in to Docker Hub...
-      - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
       - echo Logging in to Amazon ECR...
       - aws --version
       - aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 905418377779.dkr.ecr.ap-southeast-1.amazonaws.com
@@ -34,7 +32,7 @@ phases:
       - cat imageDetail.json
 artifacts:
   files: 
-    - imagedefinitions.json
     - appspec.yaml
     - imageDetail.json
     - taskdef.json
+    

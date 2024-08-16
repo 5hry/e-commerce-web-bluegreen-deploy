@@ -1,20 +1,16 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Project: Deploying an Amazon ECS service using a blue/green deployment.
+This project demonstrates the deployment of an ECS service using a blue/green deployment strategy. It is a personal project with a website that has been customized from my friend's code.
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+![Architecture](./images/architecture.png)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Steps to Follow:
+- **Step 1:** Clone the GitHub repository.
+    ```bash
+    git clone https://github.com/5hry/e-commerce-web-bluegreen-deploy.git
+    ```
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- **Step 2:** Follow the steps in this [guide](https://dynamic-ixia-47e.notion.site/AWS-Workshops-a4f1158907854cdaaca10162a1164db9?pvs=4).
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+I have detailed the steps and necessary content in [this guide](https://dynamic-ixia-47e.notion.site/AWS-Workshops-a4f1158907854cdaaca10162a1164db9?pvs=4).
