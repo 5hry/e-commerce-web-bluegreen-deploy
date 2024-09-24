@@ -5,7 +5,7 @@
 // $dbname = "is207_database";
 
 //WS-2
-$servername = "db.akaisme.click"; // EC2 Public DNS
+$servername = "terraform-20240924072244813800000006.ch442gso0btf.ap-southeast-1.rds.amazonaws.com"; // EC2 Public DNS
 $username = "dbakaiusername";
 $password = "akaistark1ngothanhsang";
 $dbname = "MyDBInstance";
