@@ -11,6 +11,6 @@ This project demonstrates the deployment of an ECS service using a blue/green de
     git clone https://github.com/5hry/e-commerce-web-bluegreen-deploy.git
     ```
 
-- **Step 2:** Follow the steps in this [guide](https://dynamic-ixia-47e.notion.site/AWS-Workshops-a4f1158907854cdaaca10162a1164db9?pvs=4).
+- **Step 2:** Follow the steps in this [guide](http://ws-1.akaisme.click:8080/).
 
-I have detailed the steps and necessary content in [this guide](https://dynamic-ixia-47e.notion.site/AWS-Workshops-a4f1158907854cdaaca10162a1164db9?pvs=4).
+I have detailed the steps and necessary content in [this guide](http://ws-1.akaisme.click:8080/).
